@@ -15,7 +15,38 @@
     ?>
 
     <section>
-        ACCOUNT STUFF
+        <form>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" name="email"><br>
+            <label for="password">Password</label><br>
+            <input type="password" id="password" name="password"><br>
+
+            
+            <label for="fname">Card Number:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Expiry Date:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="email">CVC:</label><br>
+            <input type="text" id="email" name="email"><br>
+            <label for="lname">Address:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="email">Address (optional):</label><br>
+            <input type="text" id="email" name="email"><br>
+            <label for="fname">Country:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">City:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="email">Province:</label><br>
+            <input type="text" id="email" name="email"><br>
+            <label for="fname">Zip Code:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            
+            <button>Register</button>
+        </form>
     </section>
 
     <?php
