@@ -15,7 +15,7 @@
     ?>
 
     <section>
-        CONTENT
+        CART STUFF
     </section>
 
     <?php

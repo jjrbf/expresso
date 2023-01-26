@@ -15,7 +15,7 @@
     ?>
 
     <section>
-        CONTENT
+        ACCOUNT STUFF
     </section>
 
     <?php

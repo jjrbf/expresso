@@ -1,0 +1,75 @@
+/* navigation / header css */
+
+nav {
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #e7bb8e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 1px black;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo img {
+    max-width: 75px;
+    padding-bottom: 5px;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav a {
+    padding-right: 2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+}
+
+.nav a:hover {
+    color: grey;
+    scale: 102%;
+    transition: all ease-in-out 0.2s;
+}
+
+/* footer css */
+
+footer {
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: #e7bb8e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 1px black;
+}
+
+.shopinfo {
+    padding: 20px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.contact a {
+    text-decoration: none;
+    color: black;
+}
+
+.contact a:hover {
+    color: grey;
+    scale: 102%;
+    transition: all ease-in-out 0.2s;
+}

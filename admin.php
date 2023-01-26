@@ -15,7 +15,7 @@
     ?>
 
     <section>
-        CONTENT
+        ADMIN STUFF
     </section>
 
     <?php
