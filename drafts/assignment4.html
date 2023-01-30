@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 4</title>
+    <link rel="stylesheet" href="assignment4.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="/src/expresso logo.png" alt="">
+            <p>expresso</p>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <div class="search">
+            <h3>
+                Enter Search Item<br>
+            </h3>
+            
+            <input type="text" id="pid" name="pid">
+            
+            <input type="submit" value="Search"><br>
+            <h3>Search Results</h3>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Product ID</th><th>Product Desc</th><th>Cost</th>
+                    </tr>
+                    <tr>
+                        <td>1</td><td>Item 1</td><td>$4.99</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    
+    
+        <div class="enter_data">
+            <h3>
+                New Product Entry Form
+            </h3>
+            <form>
+                <label for="pid">Product ID:</label>
+                <input type="text" id="pid" name="pid"><br>
+                <label for="pname">Product Name:</label>
+                <input type="text" id="pname" name="pname"><br>
+                <label for="pcost">Product Cost per item:</label>
+                <input type="text" id="pcost" name="pcost"><br><br>
+                <input type="submit" value="Save">
+            </form>
+        </div>
+    
+        <div class="update_data">
+            <h3>
+                Product Update Form
+            </h3>
+            <form>
+                <label for="pid">Product ID:</label>
+                <input type="text" id="pid" name="pid"><br>
+                <label for="pname">Product Name:</label>
+                <input type="text" id="pname" name="pname"><br>
+                <label for="pcost">Product Cost per item:</label>
+                <input type="text" id="pcost" name="pcost"><br><br>
+                <input type="submit" value="Update">
+                <input type="submit" value="Delete">
+            </form>
+    
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <div class="order">
+
+            <h3>Order # 101</h3>
+
+            <div class="choices">
+
+                <div>
+                    <label for="menu">Choose from menu:</label>
+        
+                    <select name="menu" id="menu">
+                        <option value="cappuccino">Cappuccino</option>
+                        <option value="latte">Latte</option>
+                        <option value="coffee #1">Coffee #1</option>
+                        <option value="coffee #2">Coffee #2</option>
+                    </select>
+                    
+                    <div class="choices">
+                        <input type="radio" id="small" name="size_coffee" value="Small">
+                        <label for="small">Small</label><br>
+                        <input type="radio" id="medium" name="size_coffee" value="Medium">
+                        <label for="medium">Medium</label><br>
+                        <input type="radio" id="large" name="size_coffee" value="Large">
+                        <label for="large">Large</label>
+                    </div> <br>
+
+                    <input type="submit" value="Enter"><br>
+                </div>
+
+                <p>OR</p>
+
+                <div>
+                    <label for="pid">Product ID:</label>
+                    <input type="text" id="pid" name="pid">
+                    <input type="submit" value="Enter">
+                </div>
+
+            </div>
+
+            <h3>Order Content</h3>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Product Desc</th><th>Quantity</th><th>Cost</th>
+                    </tr>
+                    <tr>
+                        <td>Cappuccino</td><td>1</td><td>$4.99</td>
+                    </tr>
+                    <tr>
+                        <td>Latte</td><td>1</td><td>$3.99</td>
+                    </tr>
+                    <tr>
+                        <td>Coffee #4</td><td>1</td><td>$6.99</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Total</td><th>$15.97</th>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <input type="reset" value="Reset">
+            <input type="submit" value="Send Order"><br>
+
+        </div>
+
+        <div class="order">
+
+            <h3>Receipt # 101</h3>
+
+            <label for="receipt">Enter Receipt Here:</label>
+            <input type="text" id="receipt" name="receipt" placeholder="101">
+            <input type="submit" value="Find Receipt">
+
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Product Desc</th><th>Quantity</th><th>Cost</th>
+                    </tr>
+                    <tr>
+                        <td>Cappuccino</td><td>1</td><td>$4.99</td>
+                    </tr>
+                    <tr>
+                        <td>Latte</td><td>1</td><td>$3.99</td>
+                    </tr>
+                    <tr>
+                        <td>Coffee #4</td><td>1</td><td>$6.99</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Total</td><th>$15.97</th>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <p>Date: January 30, 2023</p>
+            <p>Time: 1:54 pm</p>
+
+        </div>
+
+    </div>
+
+
+</body>
+</html>
