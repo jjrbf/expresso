@@ -85,3 +85,11 @@ input, select, button {
 .order table {
     width: 100%;
 }
+
+small.error {
+    color: red;
+}
+
+small {
+    color: green;
+}
