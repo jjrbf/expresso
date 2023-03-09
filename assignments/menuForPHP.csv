@@ -1,0 +1,13 @@
+PROD_KEY,PROD_NAME,PROD_TYPE,PROD_COST
+HC01,Small Hot Coffee,COFFEE, $2.50 
+HC02,Med Hot Coffee,COFFEE, $3.00 
+HC03,Lg Hot Coffee,COFFEE, $3.50 
+IC01,Small Iced Coffee,COFFEE, $2.00 
+IC02,Med Iced Coffee,COFFEE, $2.50 
+IC03,Lg Iced Coffee,COFFEE, $3.00 
+TEA1,Small Tea,TEA, $1.50 
+TEA2,Med Tea,TEA, $2.00 
+TEA3,Lg Tea,TEA, $2.50 
+ES01,Espresso,OTHER, $1.00 
+HCH1,Hot Chocolate,OTHER, $2.50 
+MOC1,Mocha,OTHER, $2.50 
