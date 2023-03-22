@@ -1,4 +1,4 @@
-<?php // query_books.php
+<?php // query_coffee.php
   require_once 'connect.php';
 
   $query  = "SELECT * FROM items_available";
