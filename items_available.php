@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/items_available.css">
     <link rel="stylesheet" href="css/content.css">
     <link rel="stylesheet" href="css/headfoot.css">
     <link rel="stylesheet" href="css/general.css">
@@ -16,8 +17,10 @@
 
     ?>
 
+    <div class="container items">
+        
     <form action="items_available.php" method="post">
-        Search: <input type="text" name="search_txt">
+        Search: <input type="text" class="text" name="search_txt">
         <input type="submit">
     </form>
     
@@ -61,5 +64,8 @@
             }
         }
     ?>
+
+    </div>
+
 </body>
 </html>

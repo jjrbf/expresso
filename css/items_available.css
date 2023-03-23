@@ -1,0 +1,12 @@
+.items {
+    display: flex; 
+    flex-direction: column; 
+}
+
+form .text {
+    width: 25em;
+}
+
+.items table {
+    margin-top: 2em;
+}

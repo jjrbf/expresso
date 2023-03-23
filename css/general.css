@@ -34,6 +34,13 @@ button:hover {
     
 }
 
-.textIn {
-    width: 100%;
+.container {
+    margin-left: 8em;
+    margin-right: 8em;
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+.container * {
+    margin: 0 auto;
 }

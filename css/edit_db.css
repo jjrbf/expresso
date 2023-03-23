@@ -1,0 +1,12 @@
+.edit tr input {
+    width: 100%;
+}
+
+.edit tr .buttons {
+    min-width: 10em;
+    text-align: center;
+}
+
+.edit tr .buttons input {
+    width: 80%;
+}

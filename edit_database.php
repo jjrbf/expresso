@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/content.css">
     <link rel="stylesheet" href="css/headfoot.css">
     <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/edit_db.css">
     <title>expresso - edit</title>
 </head>
 <body>
@@ -16,6 +17,9 @@
     include 'html/header.html';
 
 ?>
+
+<div class="container">
+    
 
 <?php 
     require_once 'php/connect.php';   
@@ -117,8 +121,8 @@
     
     //
     echo <<<_END
-    <form action='edit_database.php' method="post"><pre>
-    <table>
+    <form action='edit_database.php' method="post">
+    <table class="edit">
     <tr>
        <th>Product ID</th>
        <td colspan='4'> <input type="text" class="textIn" name="product_id" value='$product_id'> </td>
@@ -136,28 +140,31 @@
        <td colspan='4'> <input type="text" class="textIn" name="product_cost" value='$product_cost'> </td>
     </tr>
     <tr>
-        <td colspan='5'> $records </td>
+        <td colspan='5' style="text-align: center;"> $records </td>
     </tr>
     <tr>
-        <td>
+        <td class="buttons">
         <input type="submit" name= "search" value="Search"> 
         </td>
-       <td>
+       <td class="buttons">
        <input type="submit" name= "reset" value="Reset">
        </td>
-       <td>
+       <td class="buttons">
        <input type="submit" name= "insert" value="Insert">
        </td>
-       <td>
+       <td class="buttons">
        <input type="submit" name= "delete" value="Delete">
        </td>
-       <td>
+       <td class="buttons">
        <input type="submit" name= "update" value="Update">
        </td>
+    </tr>
     <table>
-    </pre></form>
+    </form>
   _END;
 ?>
+
+</div>
 
 
 </body>
