@@ -23,6 +23,17 @@ nav {
     padding-bottom: 5px;
 }
 
+.logo .link {
+    text-decoration: none;
+    color: black;
+}
+
+.logo .link:hover {
+    color: grey;
+    scale: 102%;
+    transition: all ease-in-out 0.2s;
+}
+
 .nav {
     display: flex;
 }
