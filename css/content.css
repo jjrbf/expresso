@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&display=swap');
+
+nav {
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #e7bb8e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 1px black;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo img {
+    max-width: 75px;
+    padding-bottom: 5px;
+}
+
+.nav {
+    display: flex;
+}
+
+table, th, td {
+    border: 1px black solid;
+}
+
+th, td {
+    padding: 1em;
+}
+
+input, select, button {
+    padding: 0.5em;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+
+}
+
+.search, .enter_data, .update_data, .order, .receipt  {
+    border: 1px solid black;
+    padding: 1em;
+    min-width: 33.3%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order, .receipt {
+    min-width: 50%;
+}
+
+.choices {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.choices div {
+    padding: 2em;
+    border: 1px solid black;
+}
+
+.order table {
+    width: 100%;
+}
+
+small.error {
+    color: red;
+}
+
+small {
+    color: green;
+}

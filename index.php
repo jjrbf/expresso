@@ -4,18 +4,183 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/content.css">
     <link rel="stylesheet" href="css/headfoot.css">
-    <title>title</title>
+    <link rel="stylesheet" href="css/general.css">
+    <title>expresso</title>
 </head>
 <body>
 
     <?php
         include 'html/header.html';
+        
+        require_once 'php/connect.php';
     ?>
 
     <section>
-        CONTENT
+        
+        <div class="container">
+
+            <div class="search">
+
+                <h3>
+                    Enter Search Item<br>
+                </h3>
+
+                <form action="items_available.php" method="post">
+                    Search: <input type="text" name="search_txt">
+                    <button id="searchDataButton" type="submit">Search</button> <br>
+                </form>
+
+            </div>
+
+
+            <div class="enter_data">
+
+                <h3>
+                    New Product Entry Form
+                </h3>
+
+                <label for="newPID">Product ID:</label>
+                <input type="text" id="newPID" name="newPID"><br>
+                <label for="newName">Product Name:</label>
+                <input type="text" id="newName" name="newName"><br>
+                <label for="newCost">Product Cost per item:</label>
+                $ <input type="number" id="newCost" name="newCost" placeholder="0.00" min="0.00" step="any"><br>
+                <small class="error" id="newProductError"></small><br>
+                <button id="newProductButton">Save</button> <br>
+
+            </div>
+
+            <div class="update_data">
+                <h3>
+                    Product Update Form
+                </h3>
+
+                <label for="changePID">Product ID:</label>
+                <input type="text" id="changePID" name="changePID"><br>
+                <label for="changeName">Product Name:</label>
+                <input type="text" id="changeName" name="changeName"><br>
+                <label for="changeCost">Product Cost per item:</label>
+                $ <input type="number" id="changeCost" name="changeCost" placeholder="0.00" min="0.00" step="any"><br>
+                <small class="error" id="changeProductError"></small><br>
+                <button class="productButton" value="update">Update</button>
+                <button class="productButton" value="delete">Delete</button> <br>
+
+            </div>
+
+        </div>
+
+            <div class="container">
+
+            <div class="order">
+
+                <h3>Order # 101</h3>
+
+                <div class="choices">
+
+                    <div>
+                        <label for="menu">Choose from menu:</label>
+
+                        <select name="menu" id="menu"> <!-- put PID as value -->
+                            <option value="100">Cappuccino</option>
+                            <option value="101">Latte</option>
+                            <option value="102">Coffee #1</option>
+                            <option value="103">Coffee #2</option>
+                        </select>
+                        
+                        <div class="choices">
+                            <input type="radio" id="small" name="size_coffee" value="Small" checked="checked">
+                            <label for="small">Small</label><br>
+                            <input type="radio" id="medium" name="size_coffee" value="Medium">
+                            <label for="medium">Medium</label><br>
+                            <input type="radio" id="large" name="size_coffee" value="Large">
+                            <label for="large">Large</label>
+                        </div> <br>
+
+                        <button id="orderByMenu">Enter</button>
+                    </div>
+
+                    <p>OR</p>
+
+                    <div>
+                        <label for="orderPID">Product ID:</label>
+                        <input type="text" id="orderPID" name="orderPID">
+                        <button id="orderByPID">Enter</button> <br>
+                        <small class="error" id="PIDError"></small>
+                    </div>
+
+                </div>
+
+                <h3>Order Content</h3>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Product Desc</th><th>Quantity</th><th>Cost</th>
+                        </tr>
+                        <tr>
+                            <td>Cappuccino</td><td>1</td><td>$4.99</td>
+                        </tr>
+                        <tr>
+                            <td>Latte</td><td>1</td><td>$3.99</td>
+                        </tr>
+                        <tr>
+                            <td>Coffee #4</td><td>1</td><td>$6.99</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2">Total</td><th>$15.97</th>
+                        </tr>
+                    </tfoot>
+                </table>
+                
+                <!-- need to update these to buttons -->
+                <input type="reset" value="Reset">
+                <input type="submit" value="Send Order"><br>
+
+            </div>
+
+            <div class="order">
+
+                <h3>Receipt # 101</h3>
+
+                <label for="receipt">Enter Receipt Here:</label>
+                <input type="text" id="receipt" name="receipt" placeholder="101">
+                <button id="receiptButton">Enter</button> <br>
+                <small class="error" id="receiptError"></small>
+
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Product Desc</th><th>Quantity</th><th>Cost</th>
+                        </tr>
+                        <tr>
+                            <td>Cappuccino</td><td>1</td><td>$4.99</td>
+                        </tr>
+                        <tr>
+                            <td>Latte</td><td>1</td><td>$3.99</td>
+                        </tr>
+                        <tr>
+                            <td>Coffee #4</td><td>1</td><td>$6.99</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2">Total</td><th>$15.97</th>
+                        </tr>
+                    </tfoot>
+                </table>
+
+                <p>Date: January 30, 2023</p>
+                <p>Time: 1:54 pm</p>
+
+            </div>
+
+        </div>
+
+        <!-- below is an external javascript link -->
+        <script src="js/script.js"></script>
     </section>
 
     <?php
