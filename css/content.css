@@ -39,6 +39,7 @@ input, select, button {
     padding: 0.5em;
     margin-top: 0.25em;
     margin-bottom: 0.25em;
+    width: max-content;
 
 }
 

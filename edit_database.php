@@ -121,19 +121,19 @@
     <table>
     <tr>
        <th>Product ID</th>
-       <td colspan='4'> <input type="text" name="product_id" value='$product_id'> </td>
+       <td colspan='4'> <input type="text" class="textIn" name="product_id" value='$product_id'> </td>
     </tr>
     <tr>
        <th>Product Name</th>
-       <td colspan='4'> <input type="text" name="product_name" value='$product_name'> </td>
+       <td colspan='4'> <input type="text" class="textIn" name="product_name" value='$product_name'> </td>
     </tr>
     <tr>
        <th>Product Type</th>
-       <td colspan='4'> <input type="text" name="product_type" value='$product_type'> </td>
+       <td colspan='4'> <input type="text" class="textIn" name="product_type" value='$product_type'> </td>
     </tr>
     <tr>
        <th>Cost</th>
-       <td colspan='4'> <input type="text" name="product_cost" value='$product_cost'> </td>
+       <td colspan='4'> <input type="text" class="textIn" name="product_cost" value='$product_cost'> </td>
     </tr>
     <tr>
         <td colspan='5'> $records </td>
