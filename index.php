@@ -13,8 +13,6 @@
 
     <?php
         include 'html/header.html';
-        
-        require_once 'php/connect.php';
     ?>
 
     <section>
