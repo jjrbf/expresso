@@ -25,7 +25,9 @@
     </form>
     
     <?php        
+
         require_once 'php/connect.php';
+
         if (isset($_POST['search_txt'])){
             $search = $_POST['search_txt'];
         
@@ -63,6 +65,7 @@
             echo "</tr>";
             }
         }
+        
     ?>
 
     </div>

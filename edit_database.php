@@ -22,14 +22,15 @@
     
 
 <?php 
-    require_once 'php/connect.php';   
 
-    if (isset($_POST['reset'])){
-        $product_id=""; $product_name="";$product_type="";$product_cost="";$records="";
-    }
+    require_once 'php/connect.php';   
 
     if (!(isset($records))){
         $product_id=""; $product_name="";$product_type="";$product_cost="";$records="Waiting for instruction...";
+    }
+
+    if (isset($_POST['reset'])){
+        $product_id=""; $product_name="";$product_type="";$product_cost="";$records="";
     }
 
     function get_post($pdo, $var) {
@@ -118,8 +119,6 @@
 
     }  
 
-    
-    //
     echo <<<_END
     <form action='edit_database.php' method="post">
     <table class="edit">
